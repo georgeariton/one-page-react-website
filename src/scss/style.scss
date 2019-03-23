@@ -1,0 +1,29 @@
+html, body {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-size: 18px;
+}
+
+// You can overwrite bootstrap default variables here, or create new ones
+@import 'partials/variables';
+
+// Bootstrap scss
+@import '~bootstrap/scss/bootstrap.scss';
+
+::-moz-selection {
+  color: #fff;
+  background: $orange;
+}
+
+::selection {
+  color: #fff;
+  background: $orange;
+}
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+

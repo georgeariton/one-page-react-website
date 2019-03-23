@@ -1,0 +1,35 @@
+header {
+  .masthead {
+    min-height: 512px;
+    background: url("/images/slide-image.jpg");
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-shadow: 0 1px 3px rgba(30, 30, 30, 0.5);
+    flex-direction: column;
+
+    h2 {
+      font-style: italic;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
+  nav {
+    background: $nav-bg;
+    @include media-breakpoint-up(lg) {
+      background: transparent;
+    }
+    .navbar-brand {
+      text-shadow: 0 1px 3px rgba(30, 30, 30, 0.5);
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
